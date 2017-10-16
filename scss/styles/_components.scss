@@ -1,17 +1,22 @@
 // Shared
-.img-full { width: 100%; }
+.img-full {
+  width: 100%;
+}
 
 // Custom Buttons
 .button {
   border: 1px solid #d7d7d7;
   background-color: #f3f3f3;
   line-height: normal;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   text-decoration: none;
   color: #363636;
   display: inline-block;
   transition: all 0.3s;
-  &:hover, &:active { text-decoration: none; }
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
   &:hover {
     color: $white;
     background: #f9f9f9;
@@ -25,8 +30,12 @@
   border: 0;
   background: transparent;
   padding: 0;
-  &:hover { text-decoration: none; }
-  &:active { outline: 0; }
+  &:hover {
+    text-decoration: none;
+  }
+  &:active {
+    outline: 0;
+  }
 }
 
 // Heading Overrides
@@ -49,7 +58,7 @@
   border: 1px solid $grey;
   background: transparent;
   padding: 10px;
-  transition: all .2s;
+  transition: all 0.2s;
   &:focus {
     outline: 0;
     border-color: $pink;
@@ -65,7 +74,7 @@
   text-decoration: none;
   border: 1px solid transparent;
   background: $pink;
-  transition: all .2s;
+  transition: all 0.2s;
   font-weight: 400;
   display: inline-block;
   position: relative;
@@ -74,14 +83,20 @@
     background: $light-pink;
     text-decoration: none;
   }
-  &:active { top: 1px; }
+  &:active {
+    top: 1px;
+  }
 }
 .button-primary {
-  &:hover { @include background-alpha($pink, 80%); }
+  &:hover {
+    @include background-alpha($pink, 80%);
+  }
 }
 .button-secondary {
   @include background-alpha($dark-grey, 100%);
-  &:hover { @include background-alpha($dark-grey, 90%); }
+  &:hover {
+    @include background-alpha($dark-grey, 90%);
+  }
 }
 .button-play {
   width: 80px;
@@ -89,7 +104,7 @@
   border: 0;
   padding: 0;
   border-radius: 100%;
-  transition: all .2s;
+  transition: all 0.2s;
   &:hover {
     @include background-alpha($pink, 80%);
   }
@@ -116,8 +131,10 @@
   height: 20px;
   background-repeat: no-repeat;
   display: block;
-  transition: all .2s;
-  &:hover { background-repeat: no-repeat; }
+  transition: all 0.2s;
+  &:hover {
+    background-repeat: no-repeat;
+  }
 }
 .social-linkedin {
   background-image: url(../img/linkedin.svg);
@@ -151,7 +168,6 @@
     background-position: 50% 50%;
   }
 }
-
 
 // General Content
 .content-block {
@@ -218,7 +234,8 @@
   background: transparent;
   width: 40px;
   height: 40px;
-  &:before, &:after {
+  &:before,
+  &:after {
     content: "";
     width: 30px;
     height: 3px;
@@ -228,7 +245,13 @@
     top: 17px;
     left: 5px;
   }
-  &:before { transform: rotate(45deg); }
-  &:after { transform: rotate(-45deg); }
-  &:hover { opacity: .8; }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+  &:hover {
+    opacity: 0.8;
+  }
 }

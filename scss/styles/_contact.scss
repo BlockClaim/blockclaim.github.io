@@ -45,7 +45,7 @@
 }
 .contact-submit {
   margin-top: 20px;
-  padding: .5em 2.5em;
+  padding: 0.5em 2.5em;
   font-weight: 400;
 }
 
@@ -70,16 +70,16 @@
   }
 }
 .contact-icon-location:before {
-    background-image: url(../img/mapmarker.svg);
-    background-position: 50% 50%;
+  background-image: url(../img/mapmarker.svg);
+  background-position: 50% 50%;
 }
 .contact-icon-phone:before {
-    background-image: url(../img/phone.svg);
-    background-position: 50% 50%;
+  background-image: url(../img/phone.svg);
+  background-position: 50% 50%;
 }
 .contact-icon-email:before {
-    background-image: url(../img/email.svg);
-    background-position: 50% 50%;
+  background-image: url(../img/email.svg);
+  background-position: 50% 50%;
 }
 
 // Contact Us Animations
@@ -92,6 +92,6 @@
   .contact-block-form {
     @include animation(1s);
     animation-delay: 0.4s;
-    @extend .fade-in-left; 
+    @extend .fade-in-left;
   }
 }
